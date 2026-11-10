@@ -1,0 +1,37 @@
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.StockControl"
+        parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- Colores principales -->
+        <item name="colorPrimary">#17365D</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="colorSecondary">#7654C8</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <!-- Superficies y fondos -->
+        <item name="android:colorBackground">#F4F6FA</item>
+        <item name="colorOnBackground">#17365D</item>
+
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#25364D</item>
+
+        <!-- Barra de estado -->
+        <item name="android:statusBarColor">#F4F6FA</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Barra de navegación -->
+        <item name="android:navigationBarColor">#F4F6FA</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Fondo de las actividades -->
+        <item name="android:windowBackground">#F4F6FA</item>
+
+    </style>
+
+    <style name="Theme.StockControl"
+        parent="Base.Theme.StockControl" />
+
+</resources>

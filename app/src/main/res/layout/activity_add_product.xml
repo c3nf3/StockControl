@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FA"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- Encabezado -->
+        <TextView
+            android:id="@+id/formTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo producto"
+            android:textColor="#17365D"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Ingresa la información del producto"
+            android:textColor="#68778B"
+            android:textSize="14sp" />
+
+        <!-- Código -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Código del producto"
+            android:textColor="#17365D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtCode"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:hint="Ej: PROD001"
+            android:inputType="textCapCharacters"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textColor="#25364D"
+            android:textColorHint="#98A2B3" />
+
+        <!-- Nombre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Nombre del producto"
+            android:textColor="#17365D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:hint="Ej: Teclado inalámbrico"
+            android:inputType="textCapSentences"
+            android:maxLength="80"
+            android:singleLine="true"
+            android:textColor="#25364D"
+            android:textColorHint="#98A2B3" />
+
+        <!-- Precio -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Precio"
+            android:textColor="#17365D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:hint="Ej: 15990"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textColor="#25364D"
+            android:textColorHint="#98A2B3" />
+
+        <!-- Stock inicial -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Stock inicial"
+            android:textColor="#17365D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtStock"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:hint="Ej: 20"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#25364D"
+            android:textColorHint="#98A2B3" />
+
+        <!-- Stock mínimo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Stock mínimo"
+            android:textColor="#17365D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtMinStock"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_card"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:hint="Ej: 5"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#25364D"
+            android:textColorHint="#98A2B3" />
+
+        <!-- Guardar -->
+        <Button
+            android:id="@+id/btnSaveProduct"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#7654C8"
+            android:text="Guardar producto"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <!-- Cancelar -->
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#17365D"
+            android:text="Cancelar"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</ScrollView>
